@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="shadow p-3 mb-5 bg-body rounded w-50 p-5">
+    <div>
+        <h1>Registration Form</h1>
+    </div>
+    <form class="d-grid gap-2">
+        <div class="row">
+            <div class="col-2">
+                User ID:
+            </div>
+            <div class="col">
+                <input type="text" name="txtUserID" id="txtUserID">
+                <span id="statusOfUserID"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                Password:
+            </div>
+            <div class="col">
+                <input type="password" name="txtPassword" id="txtPassword">
+                <span id="statusOfPassword"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                Name:
+            </div>
+            <div class="col">
+                <input type="text" name="txtName" id="txtName">
+                <span id="statusOfName"></span>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-2">
+                Country:
+            </div>
+            <div class="col">
+                <select name="txtCountry" id="txtCountry">
+                    <option value="">(Please select a country)</option>
+                    <option value="#">HÀ NỘI</option>
+                    <option value="#">TP.HỒ CHÍ MINH</option>
+                    <option value="#">ĐÀ NẴNG</option>
+                    <option value="#">CẦN THƠ</option>
+                    <option value="#">KHÁC</option>
+                </select>
+                <span id="statusOfCountry"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                Zip Code:
+            </div>
+            <div class="col">
+                <input type="text" name="txtZipCode" id="txtZipCode">
+                <span id="statusOfZipCode"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                Email:
+            </div>
+            <div class="col">
+                <input type="email" name="txtEmail" id="txtEmail">
+                <span id="statusOfEmail"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                Sex:
+            </div>
+            <div class="col">
+                <input type="radio" name="txtSex" id="txtSex" value="#">
+                <label for="txtSex">Male</label>
+                <input type="radio" name="txtSex" id="txtSex" value="#">
+                <label for="txtSex">Female</label>
+                <span id="statusOfSex"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                Language:
+            </div>
+            <div class="col">
+                <input type="checkbox" name="txtLanguage" id="txtLanguage" value="#">
+                <label for="txtLanguage">English</label>
+                <input type="checkbox" name="txtLanguage" id="txtLanguage" value="#">
+                <label for="txtLanguage">Non English</label>
+                <span id="statusOfLanguage"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                About:
+            </div>
+            <div class="col">
+                <textarea rows="5" cols="40" name="txtAbout" id="txtAbout"></textarea>
+                <span id="statusOfAbout"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <input type="submit" name="btnRegister" id="btnRegister" value="Submit">
+            </div>
+        </div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
